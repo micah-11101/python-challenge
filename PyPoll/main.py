@@ -45,7 +45,7 @@ print(f"Election Results\n{oline}")
 print(f"Total Votes: {TotalVotes}\n{oline}")
 #for loop so that this code works with more names
 for num,val in enumerate(CanidateNames):
-    print(f"{val}: {"%.3f" % PercentageList[num]}% ({VotesList[num]}) \n")
+    print(f"{val}: {PercentageList[num]:.3f}% ({VotesList[num]}) \n")
 print(f"{oline}Winner: {winner}\n{oline}")
 
 #creates txt file for analysis
@@ -55,5 +55,5 @@ print(f"Election Results\n{oline}", file=r)
 print(f"Total Votes: {TotalVotes}\n{oline}", file=r)
 #for loop so that this code works with more names
 for num,val in enumerate(CanidateNames):
-    print(f"{val}: {"%.3f" % PercentageList[num]}% ({VotesList[num]}) \n", file=r)
+    print(f"{val}: {PercentageList[num]:.3f}% ({VotesList[num]}) \n", file=r)
 print(f"{oline}Winner: {winner}\n{oline}", file=r)
